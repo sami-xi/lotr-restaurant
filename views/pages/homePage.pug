@@ -1,0 +1,12 @@
+html
+    head
+        title Home Page
+    body
+        if loggedin
+            include ../partials/logged-in
+            h1 Welcome #{username}, to the Home Page
+            br
+        else
+            include ../partials/not-logged-in
+            h1 Welcome to the Home Page
+            br

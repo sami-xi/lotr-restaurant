@@ -1,0 +1,19 @@
+div#logged-in-header
+    p Hi, #{username}
+    |
+    |
+    a(href="/") Home
+    |
+    |
+    a(href="/users") View Users 
+    |
+    |
+    a(href="/orderform") Order Form
+    |
+    |
+    a(href="/profile") Profile
+    |
+    |
+    form(method='GET' action='/logout')
+        label(for="logout") Logout 
+        input(id="logout" type="submit" value="Submit")

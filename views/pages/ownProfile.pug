@@ -1,0 +1,34 @@
+html
+    head
+        title User Profile for #{otherUsername}
+
+body
+    include ../partials/logged-in
+
+body
+    h1 Profile for #{username}
+    |
+    |
+    p Private Mode:
+    form(method="POST" action="/users")
+        input(id="on" type="radio" name="privateMode")
+        label(for="on") On
+        br
+        br
+        input(id="off" type="radio" name="privateMode")
+        label(for="off") Off
+        br
+        br
+        input(type="submit" value="Update") 
+    br
+    br
+    a(href="/logout") Log Out
+    br
+    h2 Order History: 
+    each item in list
+        a(href="/order/" + item._id) #{item._id}
+        br
+        br
+
+
+    

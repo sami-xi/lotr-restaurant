@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Order Form</title>
+		<style>
+			.column {
+				float: left;
+			}
+
+			.left{
+				width: 10%;
+			}
+			
+			.right {
+				width: 25%;
+			}
+
+			.middle {
+				width: 65%;
+			}
+		</style>
+	</head>
+	
+	<body onload="init()">
+		<div id="logged-in-header">
+			<p>Hi, </p>
+			<a href="/">Home</a>
+			<a href="/users">View Users </a>
+			<a href="/orderform">Order Form</a>
+			<a href="/profile">Profile</a>
+			
+			<form method="GET" action="/logout">
+			  <label for="logout">Logout </label>
+			  <input id="logout" type="submit" value="Submit"/>
+			</form>
+		</div>
+		<select id="restaurant-select"></select>
+		<br><br>
+		<div id="info"></div>
+		<div id="main">
+			<div class="column left" id="left"></div>
+			<div class="column middle" id="middle"></div>
+			<div class="column right" id="right"></div>
+		</div>
+	
+		<script src="orderform.js"></script>
+	</body>
+
+</html>

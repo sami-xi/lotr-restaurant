@@ -1,0 +1,19 @@
+html
+    head
+        title Register
+    body 
+        include ../partials/not-logged-in
+    body
+        form(method='POST' action='/register')
+            label(for="registerUsername") Username:
+            br
+            input(id ="registerUsername" type="text" name="registerUsername")
+            br
+            label(for="registerPassword") Password:
+            br
+            input(id ="registerPassword" type="text" name="registerPassword")
+            br
+            br
+            input(type="submit" value="Submit")
+        
+        

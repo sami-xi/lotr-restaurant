@@ -1,0 +1,17 @@
+html
+    head
+        title Login
+    body 
+        include ../partials/not-logged-in
+    body
+        form(method='POST' action='/login')
+            label(for="loginUsername") Username:
+            br
+            input(id ="loginUsername" type="text" name="loginUsername")
+            br
+            label(for="loginPassword") Password:
+            br
+            input(id ="loginPassword" type="text" name="loginPassword")
+            br
+            br
+            input(type="submit" value="Submit")

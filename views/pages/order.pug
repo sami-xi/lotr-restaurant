@@ -1,0 +1,19 @@
+html
+        head
+                title Order
+        body
+                include ../partials/logged-in
+        body
+                p Restaurant Name: #{restaurantName}
+                br
+                p Subtotal: #{subtotal}
+                br
+                p Total: #{total}
+                br
+                p Fee: #{fee}
+                br
+                p Tax: #{tax}
+                br
+                each item in list
+                        p Item Name: #{item.name}
+                        p Quantity: #{item.quantity}

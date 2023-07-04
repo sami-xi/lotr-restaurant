@@ -1,0 +1,14 @@
+html
+	head
+		title Users
+
+body
+	if (loggedin)
+		include ../partials/logged-in
+	else
+		include ../partials/not-logged-in
+
+body
+	each item in list
+		a(href="/users/" + item._id) #{item.username}
+		br

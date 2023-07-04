@@ -1,0 +1,19 @@
+html
+    head
+        title User Profile for #{username}
+
+body
+    if (loggedin)
+        include ../partials/logged-in
+    else
+        include ../partials/not-logged-in
+
+body
+    h1 Profile for #{username}
+    |
+    |
+    h2 Order History: 
+    each item in list
+        p #{item.name}
+        br
+        p Total $:#{item.total}
